@@ -1,0 +1,41 @@
+.nav {
+    grid-area: n;
+    background-color: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Округление углов */
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Градиентный фон */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: background 0.3s, transform 0.3s; /* Плавный переход */
+    cursor: pointer; /* Курсор указатель */
+    user-select: none; /* Запрещает выделение текста */
+}
+
+.nav-item:hover {
+    background: linear-gradient(135deg, #e0e0e0, #f0f0f0); /* Изменение градиента при наведении */
+    transform: translateY(-2px); /* Подъем при наведении */
+}
+
+.nav-item:active {
+    background: #ddd; /* Плоский цвет при нажатии */
+    transform: translateY(1px); /* Понижение при нажатии */
+}
+
+.nav-item:first-child {
+    border-top-left-radius: 5px; /* Округление только у первого элемента */
+    border-top-right-radius: 5px;
+}
+
+.nav-item:last-child {
+    border-bottom-left-radius: 5px; /* Округление только у последнего элемента */
+    border-bottom-right-radius: 5px;
+}

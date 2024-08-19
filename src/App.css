@@ -1,37 +1,20 @@
+/* App.css */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
-  margin: 0 auto;
-  width: 1200px;
   display: grid;
   grid-template-areas:
-  "h h"
-  "n c";
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
-
+    "h h"
+    "n c"
+    "f f";
+  grid-template-rows: 60px 1fr auto; /* Высота шапки фиксированная, контент растягивается, футер фиксированного размера */
+  grid-template-columns: 1fr 3fr;
+  min-height: 100vh; /* Гарантирует, что .App занимает всю высоту экрана */
 }
 
-.header {
-  grid-area: h;
-  background-color: green;
-}
 
-.header img {
-  height: 60px;
-  width: 60px;
-}
 
-.nav {
-  grid-area: n;
-  background-color: aquamarine;
-}
 
-.content {
-  grid-area: c;
-  background-color: beige;
-}
-
-.content .headerAcc {
-  width: 100%;
-  height: 100px;
-}
