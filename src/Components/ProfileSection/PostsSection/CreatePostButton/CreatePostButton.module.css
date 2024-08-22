@@ -1,4 +1,4 @@
-.new-post-button {
+.newPostButton {
     position: relative; /* Для абсолютного позиционирования псевдоэлемента */
     background: linear-gradient(135deg, #ff66b2, #ff3366); /* Розовый градиентный фон */
     color: white;
@@ -15,7 +15,7 @@
     z-index: 1; /* Текст находится выше псевдоэлемента */
 }
 
-.new-post-button::before {
+.newPostButton::before {
     position: absolute;
     top: -100%;
     left: -100%;
@@ -26,22 +26,22 @@
     transition: top 1s ease, left 1s ease; /* Плавное перемещение */
 }
 
-.new-post-button:hover::before {
+.newPostButton:hover::before {
     top: 0;
     left: 0;
 }
 
-.new-post-button:hover {
+.newPostButton:hover {
     transform: translateY(-2px); /* Подъем кнопки при наведении */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Увеличение тени при наведении */
 }
 
-.new-post-button:active {
+.newPostButton:active {
     transform: translateY(1px); /* Понижение кнопки при нажатии */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Уменьшение тени при нажатии */
 }
 
-.new-post-button:focus {
+.newPostButton:focus {
     outline: none; /* Убираем стандартный фокусный контур */
     box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5); /* Добавляем кастомный фокусный контур */
 }

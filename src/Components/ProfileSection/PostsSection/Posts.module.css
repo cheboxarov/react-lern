@@ -1,19 +1,14 @@
-.posts-list .post {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-}
-
-.posts-list .post:last-child {
+.postsList .post:last-child {
     border-bottom: none;
 }
 
-.posts-section {
+.postsSection {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
-.new-post {
+.newPost {
     margin-bottom: 20px;
 }

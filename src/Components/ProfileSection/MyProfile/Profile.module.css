@@ -1,25 +1,25 @@
-.profile-section {
+.profileSection {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.profile-pic {
+.profilePic {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin-right: 20px;
 }
 
-.profile-info {
+.profileInfo {
     max-width: 500px;
 }
 
-.profile-info h2 {
+.profileInfo h2 {
     margin: 0;
 }
 
-.profile-info p {
+.profileInfo p {
     margin: 5px 0 0;
     color: #555;
 }

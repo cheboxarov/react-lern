@@ -1,0 +1,27 @@
+.header {
+    grid-area: h;
+    background-color: #444; /* Темный фон для контраста */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Распределение элементов по краям */
+    padding: 10px 20px; /* Отступы для большего пространства */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+}
+
+.logo img {
+    height: 50px; /* Высота логотипа */
+    margin-right: 10px; /* Отступ между логотипом и текстом */
+    border-radius: 5px;
+}
+
+.logo-text {
+    font-size: 24px; /* Размер шрифта для текста логотипа */
+    font-weight: bold; /* Жирный шрифт */
+    letter-spacing: 1px; /* Расстояние между буквами */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень для текста */
+}

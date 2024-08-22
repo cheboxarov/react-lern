@@ -1,0 +1,66 @@
+.nav {
+    grid-area: n;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-item:hover {
+    background: #e0e0e0;
+}
+
+.nav-item:active {
+    background: #ccc;
+}
+
+.nav-item:last-child {
+    margin-bottom: 0;
+}
+
+.nav-item .emoji {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.nav-item:hover {
+    transform: scale(1.02);
+}

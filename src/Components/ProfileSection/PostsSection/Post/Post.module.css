@@ -1,0 +1,91 @@
+.post {
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Закругленные углы */
+    padding: 15px; /* Увеличенный отступ */
+    margin: 10px 0; /* Отступ между постами */
+    background-color: #ffffff; /* Белый фон */
+    box-shadow: none; /* Убираем тень для эффекта подъема */
+    transition: none; /* Убираем плавную анимацию */
+}
+
+.post:hover {
+    /* Убираем эффекты при наведении */
+    box-shadow: none; /* Убираем тень при наведении */
+    transform: none; /* Убираем увеличение при наведении */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px; /* Ширина аватарки */
+    height: 40px; /* Высота аватарки */
+    border-radius: 50%; /* Круглая форма */
+    margin-right: 10px; /* Отступ между аватаркой и текстом */
+}
+
+.postInfo {
+    flex-grow: 1; /* Позволяет заголовку занимать оставшееся пространство */
+}
+
+.postTime {
+    font-size: 0.9rem; /* Размер шрифта для времени */
+    color: #888; /* Цвет текста для времени */
+}
+
+.views {
+    font-size: 0.9rem; /* Размер шрифта для количества просмотров */
+    color: #888; /* Цвет текста для просмотров */
+    margin: 5px 0; /* Отступ сверху и снизу */
+}
+
+.likeSection {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.likeButton {
+    background: none;
+    border: none;
+    font-size: 24px; /* Увеличенный размер для кнопки */
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px; /* Отступ между кнопкой и количеством лайков */
+    transition: transform 0.2s; /* Плавная анимация */
+}
+
+.likeButton:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.liked {
+    color: red; /* Цвет сердечка при лайке */
+}
+
+.likeCount {
+    font-weight: bold;
+}
+
+/* Заголовок поста */
+h3 {
+    font-size: 1.5rem; /* Размер шрифта заголовка */
+    color: #333; /* Цвет текста заголовка */
+    margin: 0 0 5px 0; /* Отступы для заголовка */
+}
+
+/* Параграфы с контентом поста */
+p {
+    font-size: 1rem; /* Размер шрифта контента */
+    color: #555; /* Цвет текста контента */
+    line-height: 1.5; /* Междустрочный интервал для удобочитаемости */
+}
+
+/* Общий стиль контейнера */
+.container {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: auto; /* Центрирование контейнера */
+    padding: 20px; /* Отступы вокруг контейнера */
+}

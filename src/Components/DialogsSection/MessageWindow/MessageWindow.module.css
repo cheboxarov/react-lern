@@ -1,0 +1,46 @@
+.messageWindow {
+    flex: 2;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+.messageWindow h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.message {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    max-width: 70%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.myMessage {
+    background-color: #e0ffe0
+}
+
+.theirMessage {
+    background-color: #f0f0f0;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: #888888;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
