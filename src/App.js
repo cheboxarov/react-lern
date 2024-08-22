@@ -18,6 +18,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<ProfileSection/>}/>
                     <Route path="/profile" element={<ProfileSection/>}/>
+                    <Route path="/messages/:id" element={<DialogsSection/>}/>
                     <Route path="/messages" element={<DialogsSection/>}/>
                 </Routes>
                 <Footer />
