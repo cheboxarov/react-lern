@@ -1,5 +1,6 @@
 import ProfileClasses from "./Profile.module.css";
 import React from "react";
+import OnlineLine from "./OnlineLine/OnlineLine";
 
 const MyProfile = () => {
     return (
@@ -9,6 +10,7 @@ const MyProfile = () => {
             <div className={ProfileClasses.profileInfo}>
                 <h2>My Name</h2>
                 <p>Short description about myself.</p>
+                <OnlineLine onlineState />
             </div>
         </section>
     )

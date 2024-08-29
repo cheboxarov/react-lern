@@ -9,17 +9,17 @@ import DialogsSection from "./Components/DialogsSection/DialogsSection";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import ProfileSection from "./Components/ProfileSection/ProfileSection";
 
-function App() {
+function App({store}) {
     return (
         <Router>
             <div className="App">
                 <Header />
                 <Navigation />
                 <Routes>
-                    <Route path="/" element={<ProfileSection/>}/>
-                    <Route path="/profile" element={<ProfileSection/>}/>
-                    <Route path="/messages/:id" element={<DialogsSection/>}/>
-                    <Route path="/messages" element={<DialogsSection/>}/>
+                    <Route path="/" element={<ProfileSection profile={store.state.profile} />}/>
+                    <Route path="/profile" element={<ProfileSection profile={store.state.profile} />}/>
+                    <Route path="/messages/:id" element={<DialogsSection messages={store.state.dialogsWindow} />}/>
+                    <Route path="/messages" element={<DialogsSection messages={store.state.dialogsWindow} />}/>
                 </Routes>
                 <Footer />
             </div>

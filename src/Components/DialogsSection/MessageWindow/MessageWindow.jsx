@@ -18,6 +18,8 @@ const MessageWindow = ({ dialog }) => {
                     </div>
                 ))}
             </div>
+            <textarea></textarea>
+            <button>Отправить сообщение</button>
         </div>
     );
 };

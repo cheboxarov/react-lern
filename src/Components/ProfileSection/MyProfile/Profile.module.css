@@ -6,6 +6,7 @@
 
 .profilePic {
     border-radius: 50%;
+    border: 2px solid #54e830;
     width: 100px;
     height: 100px;
     margin-right: 20px;
