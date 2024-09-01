@@ -12,3 +12,38 @@
 .newPost {
     margin-bottom: 20px;
 }
+
+.textarea {
+    width: 98%;
+    height: 100px; /* Можно изменить, чтобы соответствовало вашим требованиям */
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    resize: vertical; /* Позволяет пользователю изменять высоту textarea */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.textarea:focus {
+    border-color: #ff66b2; /* Цвет фокуса, который соответствует стилю кнопки */
+    box-shadow: 0 0 5px rgba(255, 102, 178, 0.5); /* Свечение при фокусе */
+    background-color: #fff; /* Белый фон при фокусе */
+    outline: none; /* Убираем стандартный фокусный контур */
+}
+
+.textarea::placeholder {
+    color: #aaa; /* Цвет плейсхолдера */
+    font-style: italic; /* Курсив для плейсхолдера */
+    transition: color 0.3s;
+}
+
+.textarea:focus::placeholder {
+    color: #ff66b2; /* Цвет плейсхолдера при фокусе */
+}
+
+.textarea:hover {
+    border-color: #ccc; /* Цвет границы при наведении */
+}

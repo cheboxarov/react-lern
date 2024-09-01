@@ -1,19 +1,6 @@
 
 
 let store = {
-    addPost(title) {
-        let newPostContent = store.state.profile.newPostContent
-        let newPost = {
-            title: title,
-            content: newPostContent,
-            likes: 0,
-            views: 0,
-            time: "Now",
-            avatar: "https://i.pinimg.com/236x/a4/01/42/a401427af3f46fbf774e56ab0723bab9.jpg" // Замените на URL вашей аватарки
-        }
-        store.state.profile.posts.unshift(newPost)
-        store._callSubscriber(store)
-    },
 
     state: {
         profile: {
@@ -59,9 +46,7 @@ let store = {
                     avatar: "https://i.pinimg.com/236x/a4/01/42/a401427af3f46fbf774e56ab0723bab9.jpg" // Замените на URL вашей аватарки
                 },
             ],
-            addPostFunc: null,
             newPostContent: "",
-            updatePostArea: null,
         },
         dialogsWindow: {
             dialogs: [
@@ -81,8 +66,22 @@ let store = {
         store._callSubscriber = newRerender
     },
 
-    updatePostArea(newText) {
-        store.state.profile.newPostContent = newText
+    dispatch(action) {
+        if(action.type === "ADD-POST") {
+            let newPostContent = store.state.profile.newPostContent
+            let newPost = {
+                title: action.title,
+                content: newPostContent,
+                likes: 0,
+                views: 0,
+                time: "Now",
+                avatar: "https://i.pinimg.com/236x/a4/01/42/a401427af3f46fbf774e56ab0723bab9.jpg" // Замените на URL вашей аватарки
+            }
+            store.state.profile.posts.unshift(newPost)
+            store._callSubscriber(store)
+        } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+            store.state.profile.newPostContent = action.newText
+        }
     }
 }
 

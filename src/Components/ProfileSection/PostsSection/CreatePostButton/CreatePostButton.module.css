@@ -1,4 +1,5 @@
 .newPostButton {
+    margin-top: 10px;
     position: relative; /* Для абсолютного позиционирования псевдоэлемента */
     background: linear-gradient(135deg, #ff66b2, #ff3366); /* Розовый градиентный фон */
     color: white;

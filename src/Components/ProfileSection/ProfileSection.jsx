@@ -3,11 +3,11 @@ import ContentClasses from './Content.module.css'
 import PostsSection from "./PostsSection/PostsSection";
 import MyProfile from "./MyProfile/MyProfile";
 
-const ProfileSection = ({profile}) => {
+const ProfileSection = ({profile, dispatch}) => {
     return (<main className={ContentClasses.content}>
         <MyProfile />
-        <PostsSection posts={profile.posts} addPostFunc={profile.addPostFunc}
-                      newPostContent={profile.newPostContent} updatePostArea={profile.updatePostArea} />
+        <PostsSection posts={profile.posts}
+                      newPostContent={profile.newPostContent} dispatch={dispatch} />
     </main>)
 }
 

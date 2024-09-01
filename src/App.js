@@ -16,8 +16,8 @@ function App({store}) {
                 <Header />
                 <Navigation />
                 <Routes>
-                    <Route path="/" element={<ProfileSection profile={store.state.profile} />}/>
-                    <Route path="/profile" element={<ProfileSection profile={store.state.profile} />}/>
+                    <Route path="/" element={<ProfileSection profile={store.state.profile} dispatch={store.dispatch.bind(store)} />}/>
+                    <Route path="/profile" element={<ProfileSection profile={store.state.profile} dispatch={store.dispatch.bind(store)} />}/>
                     <Route path="/messages/:id" element={<DialogsSection messages={store.state.dialogsWindow} />}/>
                     <Route path="/messages" element={<DialogsSection messages={store.state.dialogsWindow} />}/>
                 </Routes>
